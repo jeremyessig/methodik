@@ -1,0 +1,64 @@
+/**
+Name: Metodik
+Version: 0.0.1
+Description: Metodik est un framework css
+Licence: GNU GPL
+*/
+
+/**
+Fichier d'initialisation contenant les propriétés globales
+du projet
+*/
+
+/************************************************************
+                Commandes
+************************************************************/
+// COMPILATION DU THEME
+// sass --watch metodik/export.scss:metodik.css
+
+/************************************************************
+            Variables de configuration du projet
+************************************************************/
+
+//Marge des éléments contenu dans une section
+$mk-section-margin: 0;
+$mk-section-padding: 0;
+
+$mk-section__header-margin: 0;
+$mk-section__header-padding: 1% 2%;
+
+$mk-section__body-margin: 0;
+$mk-section__body-padding: 1% 2%;
+
+$mk-section__footer-margin: 0;
+$mk-section__footer-padding: 1% 2%;
+
+/**************************
+        Block
+**************************/
+// block
+// Marge horizontales de block
+$mk-block-margin: 1%;
+$mk-block-padding: 1%;
+
+// block__text
+$mk-block__text-margin: 1%;
+$mk-block__text-padding: 1%;
+
+// block__title
+$m-block__text__title-margin: 0.2rem;
+$m-block__text__title-padding: 0;
+
+//
+
+$mk-bg-color-primary: #c9defc;
+$mk-bg-color-primary--light: #f0f3f9;
+$mk-bg-color-primary--dark: #4f6e9a;
+
+$mk-bg-color-secondary: #c9defc;
+$mk-bg-color-secondary--light: #f0f3f9;
+$mk-bg-color-secondary--dark: #4f6e9a;
+
+$mk-font-color-primary: grey;
+$mk-font-color-primary--light: white;
+$mk-font-color-primary--dark: black;

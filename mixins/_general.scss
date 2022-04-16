@@ -1,0 +1,15 @@
+// Contient toutes les mixines par défaut utilisables à travers les différents projets
+
+@mixin mk-flex-center($column: false) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if ($column) {
+    flex-direction: column;
+  }
+}
+
+@mixin mk-self-center {
+  justify-self: center;
+  align-self: center;
+}

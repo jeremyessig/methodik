@@ -1,0 +1,58 @@
+@mixin mk-section() {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin mk-section-container(
+  $margin: $mk-section-margin,
+  $padding: $mk-section-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin mk-section__header-container(
+  $margin: $mk-section__header-margin,
+  $padding: $mk-section__header-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin mk-section__body-container(
+  $margin: $mk-section__body-margin,
+  $padding: $mk-section__body-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin mk-section__footer-container(
+  $margin: $mk-section__footer-margin,
+  $padding: $mk-section__footer-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+
+/*****************************************
+            Structures nested
+*****************************************/
+
+.mk-section {
+  @include mk-section;
+  @include mk-section-container;
+  &__header {
+    @include mk-section__header-container;
+  }
+  &__body {
+    @include mk-section__body-container;
+  }
+  &__footer {
+    @include mk-section__footer-container;
+  }
+}
