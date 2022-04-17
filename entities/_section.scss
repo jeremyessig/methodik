@@ -5,6 +5,8 @@
   min-width: 100%;
   max-width: 100%;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 @mixin mk-section-container(
@@ -20,23 +22,13 @@
 
 .mk-section {
   @include mk-section;
-  @include mk-section-container($mk-section-margin, $mk-section-padding);
   &__header {
-    @include mk-section-container(
-      $mk-section__header-margin,
-      $mk-section__header-padding
-    );
+    @include mk-section-container;
   }
   &__body {
-    @include mk-section-container(
-      $margin: $mk-section__body-margin,
-      $padding: $mk-section__body-padding
-    );
+    @include mk-section-container;
   }
   &__footer {
-    @include mk-section-container(
-      $margin: $mk-section__footer-margin,
-      $padding: $mk-section__footer-padding
-    );
+    @include mk-section-container;
   }
 }

@@ -20,37 +20,9 @@ du projet
             Variables de configuration du projet
 ************************************************************/
 
-//Marge des éléments contenu dans une section
-$mk-section-margin: 0;
-$mk-section-padding: 0;
-
-$mk-section__header-margin: 0;
-$mk-section__header-padding: 1% 2%;
-
-$mk-section__body-margin: 0;
-$mk-section__body-padding: 1% 2%;
-
-$mk-section__footer-margin: 0;
-$mk-section__footer-padding: 1% 2%;
-
 /**************************
-        Block
+        Theme color
 **************************/
-// block
-// Marge horizontales de block
-$mk-block-margin: 1%;
-$mk-block-padding: 1%;
-
-// block__text
-$mk-block__text-margin: 1%;
-$mk-block__text-padding: 1%;
-
-// block__title
-$m-block__text__title-margin: 0.2rem;
-$m-block__text__title-padding: 0;
-
-//
-
 $mk-bg-color-primary: #c9defc;
 $mk-bg-color-primary--light: #f0f3f9;
 $mk-bg-color-primary--dark: #4f6e9a;
@@ -62,3 +34,40 @@ $mk-bg-color-secondary--dark: #4f6e9a;
 $mk-font-color-primary: grey;
 $mk-font-color-primary--light: white;
 $mk-font-color-primary--dark: black;
+
+/**************************
+        Section
+**************************/
+$mk-section-margin: 0;
+$mk-section-padding: 2% 5%;
+
+/**************************
+        Block
+**************************/
+// block
+// Marge horizontales de block
+$mk-block-font-family: Arial, Helvetica, sans-serif;
+$mk-block-margin: 1%;
+$mk-block-padding: 1%;
+
+// block__text
+$mk-block__text-font-family: Arial, Helvetica, sans-serif;
+$mk-block__text-margin: 1%;
+$mk-block__text-padding: 1%;
+
+// block__title
+$mk-block__title-font-family: Arial, Helvetica, sans-serif;
+$mk-block__title-margin: 0.2rem;
+$mk-block__title-padding: 0;
+$mk-block__title-font-family: "Bookman Old Style", serif;
+
+// block__title
+$mk-block__subtitle-font-family: Arial, Helvetica, sans-serif;
+$mk-block__subtitle-margin: 0.2rem;
+$mk-block__subtitle-padding: 0;
+$mk-block__subtitle-font-family: "Bookman Old Style", serif;
+
+// block__img
+
+$mk-block__img-sizes: 256px, 426px, 640px, 768px, 800px, 848px, 854px, 896px,
+  960px, 1024px;
