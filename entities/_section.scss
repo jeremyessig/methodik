@@ -14,45 +14,29 @@
   margin: $margin;
   padding: $padding;
 }
-
-@mixin mk-section__header-container(
-  $margin: $mk-section__header-margin,
-  $padding: $mk-section__header-padding
-) {
-  margin: $margin;
-  padding: $padding;
-}
-
-@mixin mk-section__body-container(
-  $margin: $mk-section__body-margin,
-  $padding: $mk-section__body-padding
-) {
-  margin: $margin;
-  padding: $padding;
-}
-
-@mixin mk-section__footer-container(
-  $margin: $mk-section__footer-margin,
-  $padding: $mk-section__footer-padding
-) {
-  margin: $margin;
-  padding: $padding;
-}
-
 /*****************************************
             Structures nested
 *****************************************/
 
 .mk-section {
   @include mk-section;
-  @include mk-section-container;
+  @include mk-section-container($mk-section-margin, $mk-section-padding);
   &__header {
-    @include mk-section__header-container;
+    @include mk-section-container(
+      $mk-section__header-margin,
+      $mk-section__header-padding
+    );
   }
   &__body {
-    @include mk-section__body-container;
+    @include mk-section-container(
+      $margin: $mk-section__body-margin,
+      $padding: $mk-section__body-padding
+    );
   }
   &__footer {
-    @include mk-section__footer-container;
+    @include mk-section-container(
+      $margin: $mk-section__footer-margin,
+      $padding: $mk-section__footer-padding
+    );
   }
 }
