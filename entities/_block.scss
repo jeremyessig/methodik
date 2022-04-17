@@ -8,7 +8,7 @@
 // Calculate img ratio from width
 @mixin mk-block-img-size-ratio($size, $ratioNum, $ratioDen) {
   @each $size in $mk-block__img-sizes {
-    .--ratio-#{$ratioNum}-#{$ratioDen} {
+    &__img-size-#{$size}.--ratio-#{$ratioNum}-#{$ratioDen} {
       height: calc($size / ($ratioNum / $ratioDen));
       width: $size;
       img {
@@ -54,6 +54,5 @@
       }
     }
   }
+  @include mk-block-img-size-ratio($mk-block__img-sizes, 16, 9);
 }
-
-@include mk-block-img-size-ratio($mk-block__img-sizes, 16, 9);
