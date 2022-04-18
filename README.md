@@ -37,10 +37,6 @@ From your website folder, open a terminal and run this command:
 sass --watch metodik/export.scss:metodik.css --style compressed
 ```
 
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
 
 ## Metodik syntax
 Metodik provides a custom syntax based on BEM. You can easily integrate it into your HTML files. Metodik classes are all prefixed with mk- to differentiate them from personal classes that you would add to your project.
