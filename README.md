@@ -116,18 +116,18 @@ Example of a Metodik blocks
 #### Images and thumbnailes
 | Class | Behaviour | Blocks |
 | ------ | ------ | ------ |
-| `--size-smaller`| | |
-| `--size-small`| | |
-| `--size-medium`| | |
-| `--size-large`| | |
-| `--size-larger`| | |
-| `--size-x-larger`| | |
-| `--size-xx-larger`| | |
-| `--size-xxx-larger`| | |
-| `--size-banner`| | |
-| `--ratio-4-3`| | |
-| `--ratio-5-3`| | |
-| `--ratio-16-9`| | |
+| `--size-smaller`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-small`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-medium`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-large`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-larger`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-x-larger`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-xx-larger`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-xxx-larger`| |`mk-box__img` `mk-box__thumbnail` |
+| `--size-banner`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-4-3`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-5-3`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-16-9`| |`mk-box__img` `mk-box__thumbnail` |
 
 
 ## License
