@@ -20,6 +20,9 @@ du projet
             Variables de configuration du projet
 ************************************************************/
 
+$mk-laptop-breakpoint: 1024px;
+$mk-mobile-breakpoint: 768px;
+
 /**************************
         Theme color
 **************************/
@@ -49,11 +52,12 @@ $mk-section-padding: 2% 5%;
 $mk-block-font-family: Arial, Helvetica, sans-serif;
 $mk-block-margin: 1%;
 $mk-block-padding: 1%;
+$mk-block-gap: 1rem 1rem;
 
 // block__text
 $mk-block__text-font-family: Arial, Helvetica, sans-serif;
-$mk-block__text-margin: 1%;
-$mk-block__text-padding: 1%;
+$mk-block__text-margin: 0 0;
+$mk-block__text-padding: 0 0;
 
 // block__title
 $mk-block__title-font-family: Arial, Helvetica, sans-serif;
@@ -68,6 +72,6 @@ $mk-block__subtitle-padding: 0;
 $mk-block__subtitle-font-family: "Bookman Old Style", serif;
 
 // block__img
-
-$mk-block__img-sizes: 256px, 426px, 640px, 768px, 800px, 848px, 854px, 896px,
-  960px, 1024px;
+$mk-block__img-margin: 0;
+$mk-block__img-padding: 0;
+$mk-block__self-flex-position: "";

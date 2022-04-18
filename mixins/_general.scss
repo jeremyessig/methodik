@@ -13,3 +13,67 @@
   justify-self: center;
   align-self: center;
 }
+
+@mixin mk-self-flex-position($position) {
+  display: flex;
+  @if $position == "center" {
+    justify-self: center;
+    align-self: center;
+  }
+  @if $position == "top-center" {
+    justify-self: start;
+    align-self: center;
+  }
+  @if $position == "bottom-center" {
+    justify-self: end;
+    align-self: center;
+  }
+  @if $position == "top-left" {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  @if $position == "bottom-left" {
+    justify-self: end;
+    align-self: start;
+  }
+  @if $position == "top-right" {
+    justify-self: start;
+    align-self: end;
+  }
+  @if $position == "bottom-right" {
+    justify-self: end;
+    align-self: end;
+  }
+}
+
+@mixin mk-flex-position($position) {
+  display: flex;
+  @if $position == "center" {
+    justify-content: center;
+    align-items: center;
+  }
+  @if $position == "top-center" {
+    justify-content: start;
+    align-items: center;
+  }
+  @if $position == "bottom-center" {
+    justify-content: end;
+    align-items: center;
+  }
+  @if $position == "top-left" {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @if $position == "bottom-left" {
+    justify-content: end;
+    align-items: start;
+  }
+  @if $position == "top-right" {
+    justify-content: start;
+    align-items: end;
+  }
+  @if $position == "bottom-right" {
+    justify-content: end;
+    align-items: end;
+  }
+}

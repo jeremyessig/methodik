@@ -1,3 +1,5 @@
+@use "sass:list";
+
 .--flex-col {
   display: flex;
   flex-direction: column;
@@ -16,4 +18,40 @@
 .--flex-row-reverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+$mk-flex-positions: (
+  "center": [center center],
+  "top-center": [start center],
+  "bottom-center": [end center],
+  "top-left": [start start],
+  "top-right": [start end],
+  "bottom-left": [end start],
+  "bottom-right": [end end],
+);
+
+@each $name, $position in $mk-flex-positions {
+  .--flex-#{$name} {
+    display: flex;
+    align-items: nth($position, 1);
+    justify-content: nth($position, 2);
+  }
+}
+
+/**************************************************
+                    MOBILE
+**************************************************/
+
+@media screen and (max-width: $mk-mobile-breakpoint) {
+  .--flex-row {
+    flex-direction: column;
+  }
+
+  @each $name, $position in $mk-flex-positions {
+    .--flex-#{$name} {
+      display: flex;
+      justify-content: nth($position, 1);
+      align-items: nth($position, 2);
+    }
+  }
 }

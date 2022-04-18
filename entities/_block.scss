@@ -1,3 +1,15 @@
+$mk-block__img-sizes: (
+  "smaller": 256px,
+  "small": 426px,
+  "medium": 640px,
+  "large": 768px,
+  "larger": 800px,
+  "x-larger": 848px,
+  "xx-larger": 896px,
+  "xxx-larger": 960px,
+  "banner": 1024px,
+);
+
 @function isFontFamilyExisting($fontFamily) {
   @if $fontFamily {
     @return $fontFamily;
@@ -7,8 +19,8 @@
 
 // Calculate img ratio from width
 @mixin mk-block-img-size-ratio($size, $ratioNum, $ratioDen) {
-  @each $size in $mk-block__img-sizes {
-    &__img-size-#{$size}.--ratio-#{$ratioNum}-#{$ratioDen} {
+  @each $name, $size in $mk-block__img-sizes {
+    &__img.--size-#{$name}.--ratio-#{$ratioNum}-#{$ratioDen} {
       height: calc($size / ($ratioNum / $ratioDen));
       width: $size;
       img {
@@ -25,6 +37,7 @@
   flex-direction: column;
   font-family: isFontFamilyExisting($mk-block-font-family);
   width: 100%;
+  gap: $mk-block-gap;
   &__text {
     width: 100%;
     margin: $mk-block__text-margin;
@@ -43,16 +56,28 @@
     padding: $mk-block__subtitle-padding;
     font-family: isFontFamilyExisting($mk-block__subtitle-font-family);
   }
-  @each $size in $mk-block__img-sizes {
-    &__img-size-#{$size} {
+
+  &__img {
+    @if $mk-block__self-flex-position {
+      @include mk-self-flex-position($mk-block__self-flex-position);
+    }
+    padding: $mk-block__img-padding;
+    margin: $mk-block__img-padding;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @each $name, $size in $mk-block__img-sizes {
+    .--size-#{$name} {
       height: $size;
       width: $size;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
+      max-width: 100%;
     }
   }
   @include mk-block-img-size-ratio($mk-block__img-sizes, 16, 9);
+  @include mk-block-img-size-ratio($mk-block__img-sizes, 4, 3);
+  @include mk-block-img-size-ratio($mk-block__img-sizes, 5, 3);
 }
