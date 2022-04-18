@@ -100,10 +100,18 @@ $mk-box__img-sizes: (
       max-width: 100%;
     }
   }
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 1, 1);
   @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 16, 9);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 9, 16);
   @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 4, 3);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 3, 4);
   @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 5, 3);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 3, 5);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 1, 1);
   @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 16, 9);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 9, 16);
   @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 4, 3);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 3, 4);
   @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 5, 3);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 3, 5);
 }

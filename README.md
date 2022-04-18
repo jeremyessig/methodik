@@ -125,9 +125,13 @@ Example of a Metodik blocks
 | `--size-xx-larger`| |`mk-box__img` `mk-box__thumbnail` |
 | `--size-xxx-larger`| |`mk-box__img` `mk-box__thumbnail` |
 | `--size-banner`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-1-1`| |`mk-box__img` `mk-box__thumbnail` |
 | `--ratio-4-3`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-3-4`| |`mk-box__img` `mk-box__thumbnail` |
 | `--ratio-5-3`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-3-5`| |`mk-box__img` `mk-box__thumbnail` |
 | `--ratio-16-9`| |`mk-box__img` `mk-box__thumbnail` |
+| `--ratio-9-16`| |`mk-box__img` `mk-box__thumbnail` |
 
 
 ## License
