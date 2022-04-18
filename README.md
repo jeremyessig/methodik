@@ -28,7 +28,7 @@ And of course Metodik itself is open source.
 
 ## Installation
 
-Dillinger requires Sass/SCSS (https://sass-lang.com/) to run.
+Metodik requires Sass/SCSS (https://sass-lang.com/) to run.
 
 Install the dependencies from the current github and copy/past it on your website folder.
 
