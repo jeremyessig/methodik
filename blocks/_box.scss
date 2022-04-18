@@ -18,9 +18,9 @@ $mk-box__img-sizes: (
 }
 
 // Calculate img ratio from width
-@mixin mk-box-img-size-ratio($size, $ratioNum, $ratioDen) {
+@mixin mk-box-img-size-ratio($tag, $size, $ratioNum, $ratioDen) {
   @each $name, $size in $mk-box__img-sizes {
-    &__img.--size-#{$name}.--ratio-#{$ratioNum}-#{$ratioDen} {
+    &__#{$tag}.--size-#{$name}.--ratio-#{$ratioNum}-#{$ratioDen} {
       height: calc($size / ($ratioNum / $ratioDen));
       width: $size;
       img {
@@ -71,6 +71,27 @@ $mk-box__img-sizes: (
       height: 100%;
     }
   }
+  &__thumbnail {
+    background-color: $mk-box__thumbnail-hover-color;
+    border-radius: $mk-box__thumbnail-border-radius;
+    padding: $mk-box__thumbnail-padding;
+    margin: $mk-box__thumbnail-padding;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover img {
+      @if $mk-box__thumbnail-hover-color {
+        opacity: $mk-box__thumbnail-opacity-color;
+      }
+
+      cursor: pointer;
+    }
+  }
 
   @each $name, $size in $mk-box__img-sizes {
     .--size-#{$name} {
@@ -79,7 +100,10 @@ $mk-box__img-sizes: (
       max-width: 100%;
     }
   }
-  @include mk-box-img-size-ratio($mk-box__img-sizes, 16, 9);
-  @include mk-box-img-size-ratio($mk-box__img-sizes, 4, 3);
-  @include mk-box-img-size-ratio($mk-box__img-sizes, 5, 3);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 16, 9);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 4, 3);
+  @include mk-box-img-size-ratio("img", $mk-box__img-sizes, 5, 3);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 16, 9);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 4, 3);
+  @include mk-box-img-size-ratio("thumbnail", $mk-box__img-sizes, 5, 3);
 }
