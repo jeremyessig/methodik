@@ -1,6 +1,6 @@
 @mixin mk-section() {
   display: flex;
-  flex-direction: column;
+  flex-direction: $mk-blocks-flex-direction;
   width: 100%;
   min-width: 100%;
   max-width: 100%;

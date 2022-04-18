@@ -39,39 +39,49 @@ $mk-font-color-primary--light: white;
 $mk-font-color-primary--dark: black;
 
 /**************************
+        Layouts
+**************************/
+
+/**************************
+    Blocks configuration
+**************************/
+$mk-blocks-flex-direction: column;
+
+/**************************
         Section
 **************************/
 $mk-section-margin: 0;
 $mk-section-padding: 2% 5%;
 
 /**************************
-        Block
+        box
 **************************/
-// block
-// Marge horizontales de block
-$mk-block-font-family: Arial, Helvetica, sans-serif;
-$mk-block-margin: 1%;
-$mk-block-padding: 1%;
-$mk-block-gap: 1rem 1rem;
+// box
+// Marge horizontales de box
+$mk-box-font-family: Arial, Helvetica, sans-serif;
+$mk-box-margin: 1%;
+$mk-box-padding: 1%;
+$mk-box-gap: 1rem 1rem;
 
-// block__text
-$mk-block__text-font-family: Arial, Helvetica, sans-serif;
-$mk-block__text-margin: 0 0;
-$mk-block__text-padding: 0 0;
+// box__text
+$mk-box__text-font-family: Arial, Helvetica, sans-serif;
+$mk-box__text-margin: 0 0;
+$mk-box__text-padding: 0 0;
 
-// block__title
-$mk-block__title-font-family: Arial, Helvetica, sans-serif;
-$mk-block__title-margin: 0.2rem;
-$mk-block__title-padding: 0;
-$mk-block__title-font-family: "Bookman Old Style", serif;
+// box__title
+$mk-box__title-font-family: Arial, Helvetica, sans-serif;
+$mk-box__title-margin: 0.2rem;
+$mk-box__title-padding: 0;
+$mk-box__title-font-family: "Bookman Old Style", serif;
 
-// block__title
-$mk-block__subtitle-font-family: Arial, Helvetica, sans-serif;
-$mk-block__subtitle-margin: 0.2rem;
-$mk-block__subtitle-padding: 0;
-$mk-block__subtitle-font-family: "Bookman Old Style", serif;
+// box__title
+$mk-box__subtitle-font-family: Arial, Helvetica, sans-serif;
+$mk-box__subtitle-margin: 0.2rem;
+$mk-box__subtitle-padding: 0;
+$mk-box__subtitle-font-family: "Bookman Old Style", serif;
 
-// block__img
-$mk-block__img-margin: 0;
-$mk-block__img-padding: 0;
-$mk-block__self-flex-position: "";
+// box__img
+$mk-box__img-margin: 0;
+$mk-box__img-padding: 0;
+$mk-box__self-flex-position: "";
+$mk-box__img-border-radius: 6px;

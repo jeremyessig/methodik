@@ -20,10 +20,11 @@ span {
 @import "theme";
 @import "mixins/general";
 @import "mixins/section";
-@import "entities/section";
-@import "entities/article";
-@import "entities/box";
-@import "entities/grid";
-@import "entities/block";
+@import "blocks/section";
+@import "blocks/article";
+@import "blocks/box";
+@import "blocks/grid";
 @import "modificators/colors";
 @import "modificators/layouts";
+@import "components/card";
+@import "components/navbar";

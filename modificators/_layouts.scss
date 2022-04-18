@@ -30,8 +30,37 @@ $mk-flex-positions: (
   "bottom-right": [end end],
 );
 
+/*
+Il faut inverser les propriété align-items et justify-content en fonction 
+de la direction du flex !!!
+*/
+
 @each $name, $position in $mk-flex-positions {
   .--flex-#{$name} {
+    display: flex;
+    align-items: nth($position, 2);
+    justify-content: nth($position, 1);
+  }
+
+  .--flex-col.--flex-#{$name} {
+    display: flex;
+    align-items: nth($position, 2);
+    justify-content: nth($position, 1);
+  }
+
+  .--flex-col-reverse.--flex-#{$name} {
+    display: flex;
+    align-items: nth($position, 2);
+    justify-content: nth($position, 1);
+  }
+
+  .--flex-row-reverse.--flex-#{$name} {
+    display: flex;
+    align-items: nth($position, 1);
+    justify-content: nth($position, 2);
+  }
+
+  .--flex-row.--flex-#{$name} {
     display: flex;
     align-items: nth($position, 1);
     justify-content: nth($position, 2);

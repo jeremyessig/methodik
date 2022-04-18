@@ -1,0 +1,85 @@
+$mk-box__img-sizes: (
+  "smaller": 256px,
+  "small": 426px,
+  "medium": 640px,
+  "large": 768px,
+  "larger": 800px,
+  "x-larger": 848px,
+  "xx-larger": 896px,
+  "xxx-larger": 960px,
+  "banner": 1024px,
+);
+
+@function isFontFamilyExisting($fontFamily) {
+  @if $fontFamily {
+    @return $fontFamily;
+  }
+  @return $mk-box-font-family;
+}
+
+// Calculate img ratio from width
+@mixin mk-box-img-size-ratio($size, $ratioNum, $ratioDen) {
+  @each $name, $size in $mk-box__img-sizes {
+    &__img.--size-#{$name}.--ratio-#{$ratioNum}-#{$ratioDen} {
+      height: calc($size / ($ratioNum / $ratioDen));
+      width: $size;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.mk-box {
+  display: flex;
+  flex-direction: $mk-blocks-flex-direction;
+  font-family: isFontFamilyExisting($mk-box-font-family);
+  width: 100%;
+  gap: $mk-box-gap;
+  &__text {
+    width: 100%;
+    margin: $mk-box__text-margin;
+    padding: $mk-box__text-padding;
+    font-family: isFontFamilyExisting($mk-box__text-font-family);
+  }
+  &__title {
+    width: 100%;
+    margin: $mk-box__title-margin;
+    padding: $mk-box__title-padding;
+    font-family: isFontFamilyExisting($mk-box__title-font-family);
+  }
+  &__subtitle {
+    width: 100%;
+    margin: $mk-box__subtitle-margin;
+    padding: $mk-box__subtitle-padding;
+    font-family: isFontFamilyExisting($mk-box__subtitle-font-family);
+  }
+
+  &__img {
+    @if $mk-box__self-flex-position {
+      @include mk-self-flex-position($mk-box__self-flex-position);
+    }
+    border-radius: $mk-box__img-border-radius;
+    padding: $mk-box__img-padding;
+    margin: $mk-box__img-padding;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @each $name, $size in $mk-box__img-sizes {
+    .--size-#{$name} {
+      height: $size;
+      width: $size;
+      max-width: 100%;
+    }
+  }
+  @include mk-box-img-size-ratio($mk-box__img-sizes, 16, 9);
+  @include mk-box-img-size-ratio($mk-box__img-sizes, 4, 3);
+  @include mk-box-img-size-ratio($mk-box__img-sizes, 5, 3);
+}
