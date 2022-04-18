@@ -24,6 +24,8 @@ $mk-flex-positions: (
   "center": [center center],
   "top-center": [start center],
   "bottom-center": [end center],
+  "center-left": [center start],
+  "center-right": [center end],
   "top-left": [start start],
   "top-right": [start end],
   "bottom-left": [end start],
