@@ -32,6 +32,11 @@ Metodik requires Sass/SCSS (https://sass-lang.com/) to run.
 
 Install the dependencies from the current github and copy/past it on your website folder.
 
+From your website folder, open a terminal and run this command:
+```bash
+sass --watch metodik/export.scss:metodik.css --style compressed
+```
+
 ## Plugins
 
 Dillinger is currently extended with the following plugins.
