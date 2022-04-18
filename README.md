@@ -88,13 +88,13 @@ Example of a Metodik blocks
 
 #### Box
 ```html
-<section class="mk-box" id="sectionExample">
+<div class="mk-box" id="boxExample">
     <div class="mk-box__title"></div>
     <div class="mk-box__subtitle"></div>
     <div class="mk-box__text"></div>
     <div class="mk-box__img"></div>
     <div class="mk-box__thumbnail"></div>
-</section>
+</div>
 ```
 
 ## Modificators
