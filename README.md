@@ -99,7 +99,7 @@ Example of a Metodik blocks
 
 ## Modificators
 #### Layouts
-| Class | Behaviour | Blocks compability  |
+| Class | Behaviour | Compatible blocks|
 | ------ | ------ | ------ |
 | `--flex-col`| | |
 | `--flex-col-reverse`| | |
@@ -114,7 +114,7 @@ Example of a Metodik blocks
 | `--flex-bottom-right`| | |
 
 #### Images and thumbnailes
-| Class | Behaviour | Blocks compability |
+| Class | Behaviour | Compatible blocks|
 | ------ | ------ | ------ |
 | `--size-smaller`| |`mk-box__img` `mk-box__thumbnail` |
 | `--size-small`| |`mk-box__img` `mk-box__thumbnail` |
