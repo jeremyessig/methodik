@@ -92,6 +92,16 @@ Example of a Metodik blocks
 </section>
 ```
 
+#### Section
+
+```html
+<article class="mk-article" id="articleExample">
+  <div class="mk-article__header"></div>
+  <div class="mk-article__body"></div>
+  <div class="mk-article__footer"></div>
+</article>
+```
+
 #### Box
 
 ```html
@@ -108,23 +118,23 @@ Example of a Metodik blocks
 
 #### Layouts
 
-| Class                         | Behaviour | Compatible blocks     |
-| ----------------------------- | --------- | --------------------- |
-| `--flex-col`                  |           | `mk-section` `mk-box` |
-| `--flex-col-reverse`          |           | `mk-section` `mk-box` |
-| `--flex-row`                  |           | `mk-section` `mk-box` |
-| `--flex-row-reverse`          |           | `mk-section` `mk-box` |
-| `--flex-center`               |           | `mk-section` `mk-box` |
-| `--flex-top-center`           |           | `mk-section` `mk-box` |
-| `--flex-bottom-center`        |           | `mk-section` `mk-box` |
-| `--flex-center-left`          |           | `mk-section` `mk-box` |
-| `--flex-center-right`         |           | `mk-section` `mk-box` |
-| `--flex-top-left`             |           | `mk-section` `mk-box` |
-| `--flex-top-right`            |           | `mk-section` `mk-box` |
-| `--flex-top-space-between`    |           | `mk-section` `mk-box` |
-| `--flex-bottom-left`          |           | `mk-section` `mk-box` |
-| `--flex-bottom-right`         |           | `mk-section` `mk-box` |
-| `--flex-bottom-space-between` |           | `mk-section` `mk-box` |
+| Class                         | Behaviour | Compatible blocks                  |
+| ----------------------------- | --------- | ---------------------------------- |
+| `--flex-col`                  |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-col-reverse`          |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-row`                  |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-row-reverse`          |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-center`               |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-top-center`           |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-bottom-center`        |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-center-left`          |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-center-right`         |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-top-left`             |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-top-right`            |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-top-space-between`    |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-bottom-left`          |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-bottom-right`         |           | `mk-section` `mk-article` `mk-box` |
+| `--flex-bottom-space-between` |           | `mk-section` `mk-article` `mk-box` |
 
 #### Images and thumbnailes
 

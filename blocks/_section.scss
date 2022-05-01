@@ -1,13 +1,13 @@
-@mixin mk-section() {
-  display: flex;
-  flex-direction: $mk-blocks-flex-direction;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
+// @mixin mk-section() {
+//   display: flex;
+//   flex-direction: $mk-blocks-flex-direction;
+//   width: 100%;
+//   min-width: 100%;
+//   max-width: 100%;
+//   height: auto;
+//   padding: 0;
+//   margin: 0;
+// }
 
 @mixin mk-section-container(
   $margin: $mk-section-margin,
@@ -21,7 +21,7 @@
 *****************************************/
 
 .mk-section {
-  @include mk-section;
+  @include mk-block;
   &__header {
     @include mk-section-container;
   }

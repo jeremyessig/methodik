@@ -14,6 +14,18 @@
   align-self: center;
 }
 
+//Propriétés par défaut de tous les block
+@mixin mk-block() {
+  display: flex;
+  flex-direction: $mk-blocks-flex-direction;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
 @mixin mk-self-flex-position($position) {
   display: flex;
   @if $position == "center" {

@@ -1,0 +1,23 @@
+@mixin mk-article-container(
+  $margin: $mk-article-margin,
+  $padding: $mk-article-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+/*****************************************
+              Structures nested
+  *****************************************/
+
+.mk-article {
+  @include mk-block;
+  &__header {
+    @include mk-article-container;
+  }
+  &__body {
+    @include mk-article-container;
+  }
+  &__footer {
+    @include mk-article-container;
+  }
+}
