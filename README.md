@@ -108,23 +108,23 @@ Example of a Metodik blocks
 
 #### Layouts
 
-| Class                         | Behaviour | Compatible blocks |
-| ----------------------------- | --------- | ----------------- |
-| `--flex-col`                  |           |                   |
-| `--flex-col-reverse`          |           |                   |
-| `--flex-row`                  |           |                   |
-| `--flex-row-reverse`          |           |                   |
-| `--flex-center`               |           |                   |
-| `--flex-top-center`           |           |                   |
-| `--flex-bottom-center`        |           |                   |
-| `--flex-center-left`          |           |                   |
-| `--flex-center-right`         |           |                   |
-| `--flex-top-left`             |           |                   |
-| `--flex-top-right`            |           |                   |
-| `--flex-top-space-between`    |           |                   |
-| `--flex-bottom-left`          |           |                   |
-| `--flex-bottom-right`         |           |                   |
-| `--flex-bottom-space-between` |           |                   |
+| Class                         | Behaviour | Compatible blocks     |
+| ----------------------------- | --------- | --------------------- |
+| `--flex-col`                  |           | `mk-section` `mk-box` |
+| `--flex-col-reverse`          |           | `mk-section` `mk-box` |
+| `--flex-row`                  |           | `mk-section` `mk-box` |
+| `--flex-row-reverse`          |           | `mk-section` `mk-box` |
+| `--flex-center`               |           | `mk-section` `mk-box` |
+| `--flex-top-center`           |           | `mk-section` `mk-box` |
+| `--flex-bottom-center`        |           | `mk-section` `mk-box` |
+| `--flex-center-left`          |           | `mk-section` `mk-box` |
+| `--flex-center-right`         |           | `mk-section` `mk-box` |
+| `--flex-top-left`             |           | `mk-section` `mk-box` |
+| `--flex-top-right`            |           | `mk-section` `mk-box` |
+| `--flex-top-space-between`    |           | `mk-section` `mk-box` |
+| `--flex-bottom-left`          |           | `mk-section` `mk-box` |
+| `--flex-bottom-right`         |           | `mk-section` `mk-box` |
+| `--flex-bottom-space-between` |           | `mk-section` `mk-box` |
 
 #### Images and thumbnailes
 
