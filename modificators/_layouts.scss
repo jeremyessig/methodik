@@ -30,6 +30,8 @@ $mk-flex-positions: (
   "top-right": [start end],
   "bottom-left": [end start],
   "bottom-right": [end end],
+  "top-space-between": [top space-between],
+  "bottom-space-between": [end space-between],
 );
 
 /*

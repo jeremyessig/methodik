@@ -76,4 +76,8 @@
     justify-content: end;
     align-items: end;
   }
+  @if $position == "bottom-space-between" {
+    justify-content: end;
+    align-items: space-between;
+  }
 }

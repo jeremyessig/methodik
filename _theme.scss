@@ -45,7 +45,7 @@ $mk-font-color-primary--dark: black;
 /**************************
     Blocks configuration
 **************************/
-$mk-blocks-flex-direction: column;
+$mk-blocks-flex-direction: row;
 
 /**************************
         Section
@@ -73,6 +73,7 @@ $mk-box__title-font-family: Arial, Helvetica, sans-serif;
 $mk-box__title-margin: 0.2rem;
 $mk-box__title-padding: 0;
 $mk-box__title-font-family: "Bookman Old Style", serif;
+//$mk-box__title-flex: left;
 
 // box__subtitle
 $mk-box__subtitle-font-family: Arial, Helvetica, sans-serif;
