@@ -26,22 +26,22 @@ $mk-mobile-breakpoint: 768px;
 #root {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.2fr 1.5fr auto;
+  grid-template-rows: 0.2fr 0.2fr 2.4fr auto;
   grid-template-areas:
-    "header header header header"
     "nav nav nav nav"
+    "header header header header"
     "sidebar main main main"
     "footer footer footer footer";
   grid-gap: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $mk-mobile-breakpoint) {
   #sidebar {
     display: none;
   }
   #root {
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 3rem 1.5fr auto;
+    grid-template-rows: 3rem 3rem 1fr 8rem;
     grid-template-areas:
       "header"
       "nav"
@@ -98,6 +98,12 @@ $mk-font-color-primary--dark: black;
     Blocks configuration
 **************************/
 $mk-blocks-flex-direction: column;
+
+/**************************
+        Header
+**************************/
+$mk-header-margin: 0;
+$mk-header-padding: 2% 5%;
 
 /**************************
         Section

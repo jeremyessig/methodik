@@ -1,0 +1,34 @@
+// @mixin mk-section() {
+//   display: flex;
+//   flex-direction: $mk-blocks-flex-direction;
+//   width: 100%;
+//   min-width: 100%;
+//   max-width: 100%;
+//   height: auto;
+//   padding: 0;
+//   margin: 0;
+// }
+
+@mixin mk-header-container(
+  $margin: $mk-header-margin,
+  $padding: $mk-header-padding
+) {
+  margin: $margin;
+  padding: $padding;
+}
+/*****************************************
+            Structures nested
+*****************************************/
+
+.mk-header {
+  @include mk-block;
+  &__top {
+    @include mk-header-container;
+  }
+  &__center {
+    @include mk-header-container;
+  }
+  &__bottom {
+    @include mk-header-container;
+  }
+}
