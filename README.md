@@ -2,7 +2,7 @@
 
 ## _A blocks CSS framework_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/jeremyessig/metodik)
 
 Metodik is a CSS framework based on the BEM syntax and on the blocks architecture. It brovides a bunch of css classes and strcutres pre-build.
 
