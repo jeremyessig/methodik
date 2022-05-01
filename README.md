@@ -82,6 +82,16 @@ Example of a Metodik blocks
 
 > Note: All blocks are prefixed by `mk-`.
 
+#### Header
+
+```html
+<header class="mk-header" id="headerExample">
+  <div class="mk-header__top"></div>
+  <div class="mk-header__center"></div>
+  <div class="mk-header__bottom"></div>
+</header>
+```
+
 #### Section
 
 ```html
