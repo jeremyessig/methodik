@@ -92,7 +92,7 @@ Example of a Metodik blocks
 </section>
 ```
 
-#### Section
+#### Article
 
 ```html
 <article class="mk-article" id="articleExample">
