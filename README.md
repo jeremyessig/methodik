@@ -108,21 +108,23 @@ Example of a Metodik blocks
 
 #### Layouts
 
-| Class                  | Behaviour | Compatible blocks |
-| ---------------------- | --------- | ----------------- |
-| `--flex-col`           |           |                   |
-| `--flex-col-reverse`   |           |                   |
-| `--flex-row`           |           |                   |
-| `--flex-row-reverse`   |           |                   |
-| `--flex-center`        |           |                   |
-| `--flex-top-center`    |           |                   |
-| `--flex-bottom-center` |           |                   |
-| `--flex-center-left`   |           |                   |
-| `--flex-center-right`  |           |                   |
-| `--flex-top-left`      |           |                   |
-| `--flex-top-right`     |           |                   |
-| `--flex-bottom-left`   |           |                   |
-| `--flex-bottom-right`  |           |                   |
+| Class                         | Behaviour | Compatible blocks |
+| ----------------------------- | --------- | ----------------- |
+| `--flex-col`                  |           |                   |
+| `--flex-col-reverse`          |           |                   |
+| `--flex-row`                  |           |                   |
+| `--flex-row-reverse`          |           |                   |
+| `--flex-center`               |           |                   |
+| `--flex-top-center`           |           |                   |
+| `--flex-bottom-center`        |           |                   |
+| `--flex-center-left`          |           |                   |
+| `--flex-center-right`         |           |                   |
+| `--flex-top-left`             |           |                   |
+| `--flex-top-right`            |           |                   |
+| `--flex-top-space-between`    |           |                   |
+| `--flex-bottom-left`          |           |                   |
+| `--flex-bottom-right`         |           |                   |
+| `--flex-bottom-space-between` |           |                   |
 
 #### Images and thumbnailes
 
