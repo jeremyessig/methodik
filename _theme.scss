@@ -57,7 +57,21 @@ du projet
         Section
 **************************/
   --mk-section-margin: 0;
-  --mk-section-padding: 2% 5%;
+
+  --mk-section-max-width: 100%;
+  --mk-section-max-height: auto;
+  --mk-section-min-width: 0%;
+  --mk-section-width: 100%;
+  --mk-section-height: auto;
+  --mk-section-padding-top: 2%;
+  --mk-section-padding-bottom: 2%;
+  --mk-section-padding-right: 5%;
+  --mk-section-padding-left: 5%;
+  --mk-section-background-color: 2%;
+
+  --mk-section-padding: var(--mk-section-padding-top)
+    var(--mk-section-padding-right) var(--mk-section-padding-bottom)
+    var(--mk-section-padding-left);
 
   /**************************
         Article
