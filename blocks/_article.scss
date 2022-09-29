@@ -1,6 +1,6 @@
 @mixin mk-article-container(
-  $margin: $mk-article-margin,
-  $padding: $mk-article-padding
+  $margin: var(---article-margin),
+  $padding: var(---article-padding)
 ) {
   margin: $margin;
   padding: $padding;

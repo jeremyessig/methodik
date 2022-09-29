@@ -17,7 +17,7 @@
 //Propriétés par défaut de tous les block
 @mixin mk-block() {
   display: flex;
-  flex-direction: $mk-blocks-flex-direction;
+  flex-direction: var(--mk-blocks-flex-direction);
   width: 100%;
   min-width: 100%;
   max-width: 100%;

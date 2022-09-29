@@ -1,38 +1,38 @@
 .--primary {
-  background-color: $mk-bg-color-primary;
-  color: $mk-font-color-primary;
+  background-color: var(--mk-bg-color-primary);
+  color: var(--mk-font-color-primary);
 }
 
 .--primary-light {
-  background-color: $mk-bg-color-primary--light;
-  color: $mk-font-color-primary--dark;
+  background-color: var(--mk-bg-color-primary--light);
+  color: var(--mk-font-color-primary--dark);
 }
 
 .--primary-dark {
-  background-color: $mk-bg-color-primary--dark;
-  color: $mk-font-color-primary--light;
+  background-color: var(--mk-bg-color-primary--dark);
+  color: var(--mk-font-color-primary--light);
 }
 
 .--bg-color_primary {
-  background-color: $mk-bg-color-primary;
+  background-color: var(--mk-bg-color-primary);
 }
 
 .--bg-color_primary-light {
-  background-color: $mk-bg-color-primary--light;
+  background-color: var(--mk-bg-color-primary--light);
 }
 
 .--bg-color_primary-dark {
-  background-color: $mk-bg-color-primary--dark;
+  background-color: var(--mk-bg-color-primary--dark);
 }
 
 .--bg-color_secondary {
-  background-color: $mk-bg-color-secondary;
+  background-color: var(--mk-bg-color-secondary);
 }
 
 .--bg-color_secondary-dark {
-  background-color: $mk-bg-color-secondary--dark;
+  background-color: var(--mk-bg-color-secondary--dark);
 }
 
 .--bg-color_secondary-light {
-  background-color: $mk-bg-color-secondary--light;
+  background-color: var(--mk-bg-color-secondary--light);
 }

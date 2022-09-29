@@ -75,7 +75,7 @@ de la direction du flex !!!
                     MOBILE
 **************************************************/
 
-@media screen and (max-width: $mk-mobile-breakpoint) {
+@media screen and (max-width: var(--mk-mobile-breakpoint)) {
   .--flex-row {
     flex-direction: column;
   }

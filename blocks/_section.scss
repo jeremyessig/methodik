@@ -10,8 +10,8 @@
 // }
 
 @mixin mk-section-container(
-  $margin: $mk-section-margin,
-  $padding: $mk-section-padding
+  $margin: var(--mk-section-margin),
+  $padding: var(--mk-section-padding)
 ) {
   margin: $margin;
   padding: $padding;

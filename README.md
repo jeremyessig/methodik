@@ -1,10 +1,10 @@
-# Metodik
+# Methodik
 
 ## _A blocks CSS framework_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/jeremyessig/metodik)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/jeremyessig/Methodik)
 
-Metodik is a CSS framework based on the BEM syntax and on the blocks architecture. It brovides a bunch of css classes and strcutres pre-build.
+Methodik is a CSS framework based on the BEM syntax and on the blocks architecture. It brovides a bunch of css classes and strcutres pre-build.
 
 ## Features
 
@@ -12,36 +12,36 @@ Metodik is a CSS framework based on the BEM syntax and on the blocks architectur
 - Build your website with pre-build blocks.
 - Customize your website with a custom scss theme file.
 - Create custom themes and share them with our community.
-- Use our Metodik syntax in your HTML files and simplify your css files
+- Use our Methodik syntax in your HTML files and simplify your css files
 - Much more !!!
 
 ## Tech
 
-Metodik uses a number of open source projects to work properly:
+Methodik uses a number of open source projects to work properly:
 
 - Sass/SCSS!
 - Javascript
 - HTML5 & CSS3
 
-And of course Metodik itself is open source.
+And of course Methodik itself is open source.
 
 ## Installation
 
-Metodik requires Sass/SCSS (https://sass-lang.com/) to run.
+Methodik requires Sass/SCSS (https://sass-lang.com/) to run.
 
 Install the dependencies from the current github and copy/past it on your website folder.
 
 From your website folder, open a terminal and run this command:
 
 ```bash
-sass --watch metodik/export.scss:metodik.css --style compressed
+sass --watch Methodik/export.scss:Methodik.css --style compressed
 ```
 
-## Metodik syntax
+## Methodik syntax
 
-Metodik provides a custom syntax based on BEM. You can easily integrate it into your HTML files. Metodik classes are all prefixed with mk- to differentiate them from personal classes that you would add to your project.
+Methodik provides a custom syntax based on BEM. You can easily integrate it into your HTML files. Methodik classes are all prefixed with mk- to differentiate them from personal classes that you would add to your project.
 
-Example of a Metodik blocks
+Example of a Methodik blocks
 
 ```html
 <section class="mk-section" id="sectionExample">
@@ -58,11 +58,11 @@ Example of a Metodik blocks
   <div class="mk-section__body">
     <div class="mk-box --flex-row">
       <div class="mk-box__text">
-        <p>Metodik is awsome and I love it !</p>
+        <p>Methodik is awsome and I love it !</p>
       </div>
       <div class="mk-box__text">
         <p>
-          With Metodik you can create beautiful websites with very little css
+          With Methodik you can create beautiful websites with very little css
           code.
         </p>
       </div>

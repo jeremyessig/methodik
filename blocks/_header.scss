@@ -10,8 +10,8 @@
 // }
 
 @mixin mk-header-container(
-  $margin: $mk-header-margin,
-  $padding: $mk-header-padding
+  $margin: var(--mk-header-margin),
+  $padding: var(--mk-header-padding)
 ) {
   margin: $margin;
   padding: $padding;

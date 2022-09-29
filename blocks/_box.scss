@@ -14,7 +14,7 @@ $mk-box__img-sizes: (
   @if $fontFamily {
     @return $fontFamily;
   }
-  @return $mk-box-font-family;
+  @return var(--mk-box-font-family);
 }
 
 // Calculate img ratio from width
@@ -34,36 +34,36 @@ $mk-box__img-sizes: (
 
 .mk-box {
   display: flex;
-  flex-direction: $mk-blocks-flex-direction;
-  font-family: isFontFamilyExisting($mk-box-font-family);
+  flex-direction: var(--mk-blocks-flex-direction);
+  font-family: isFontFamilyExisting(var(--mk-box-font-family));
   width: 100%;
-  gap: $mk-box-gap;
+  gap: var(--mk-box-gap);
   &__text {
     width: 100%;
-    margin: $mk-box__text-margin;
-    padding: $mk-box__text-padding;
-    font-family: isFontFamilyExisting($mk-box__text-font-family);
+    margin: var(--mk-box__text-margin);
+    padding: var(--mk-box__text-padding);
+    font-family: isFontFamilyExisting(var(--mk-box__text-font-family));
   }
   &__title {
     width: 100%;
-    margin: $mk-box__title-margin;
-    padding: $mk-box__title-padding;
-    font-family: isFontFamilyExisting($mk-box__title-font-family);
+    margin: var(--mk-box__title-margin);
+    padding: var(--mk-box__title-padding);
+    font-family: isFontFamilyExisting(var(--mk-box__title-font-family));
   }
   &__subtitle {
     width: 100%;
-    margin: $mk-box__subtitle-margin;
-    padding: $mk-box__subtitle-padding;
-    font-family: isFontFamilyExisting($mk-box__subtitle-font-family);
+    margin: var(--mk-box__subtitle-margin);
+    padding: var(--mk-box__subtitle-padding);
+    font-family: isFontFamilyExisting(var(--mk-box__subtitle-font-family));
   }
 
   &__img {
-    @if $mk-box__self-flex-position {
-      @include mk-self-flex-position($mk-box__self-flex-position);
+    @if var(--mk-box__self-flex-position) {
+      @include mk-self-flex-position(var(--mk-box__self-flex-position));
     }
-    border-radius: $mk-box__img-border-radius;
-    padding: $mk-box__img-padding;
-    margin: $mk-box__img-padding;
+    border-radius: var(--mk-box__img-border-radius);
+    padding: var(--mk-box__img-padding);
+    margin: var(--mk-box__img-padding);
     overflow: hidden;
     img {
       object-fit: cover;
@@ -72,10 +72,10 @@ $mk-box__img-sizes: (
     }
   }
   &__thumbnail {
-    background-color: $mk-box__thumbnail-hover-color;
-    border-radius: $mk-box__thumbnail-border-radius;
-    padding: $mk-box__thumbnail-padding;
-    margin: $mk-box__thumbnail-padding;
+    background-color: var(--mk-box__thumbnail-hover-color);
+    border-radius: var(--mk-box__thumbnail-border-radius);
+    padding: var(--mk-box__thumbnail-padding);
+    margin: var(--mk-box__thumbnail-padding);
     overflow: hidden;
     img {
       object-fit: cover;
@@ -85,8 +85,8 @@ $mk-box__img-sizes: (
       transition: all 0.2s ease-in-out;
     }
     &:hover img {
-      @if $mk-box__thumbnail-hover-color {
-        opacity: $mk-box__thumbnail-opacity-color;
+      @if var(--mk-box__thumbnail-hover-color) {
+        opacity: var(--mk-box__thumbnail-opacity-color);
       }
 
       cursor: pointer;
