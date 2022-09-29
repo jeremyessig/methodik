@@ -20,11 +20,13 @@ span {
 @import "theme";
 @import "mixins/general";
 @import "mixins/section";
+@import "blocks/box";
 @import "blocks/section";
+@import "blocks/intersection";
 @import "blocks/article";
 @import "blocks/header";
-@import "blocks/box";
 @import "blocks/grid";
+@import "blocks/flap";
 @import "modificators/colors";
 @import "modificators/layouts";
 @import "components/card";
