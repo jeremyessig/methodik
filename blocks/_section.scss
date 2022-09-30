@@ -22,6 +22,11 @@
 
 .mk-section {
   @include mk-block;
+  max-width: var(--mk-section-max-width);
+  max-height: var(--mk-section-max-height);
+  min-width: var(--mk-section-min-width);
+  min-height: var(--mk-section-min-height);
+  width: var(--mk-section-width);
   &__header {
     @include mk-section-container;
   }
